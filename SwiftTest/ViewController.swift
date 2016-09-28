@@ -71,7 +71,52 @@ func test6()  {
     //布尔值 只有true喝false2个值
     let b:Bool = true
     print(b)
-     
+    //可以用于if结构
+    if true {
+        print("if结构")
+    }
+    if b {
+        print("if jiegous")
+    }
+    let c:Int = 3
+    if c==3 {
+        print("ifjies")
+    }
+    if c==5 {
+        print("sdabsxxx")
+    }
+    if (b) {
+        print("带括号")
+    }
+}
+//元组 （40,"xiaos"）多个相同数据类型或者不同的数据类型组合在一起  这就是一个元组
+func test7() {
+    //元组类型 （类型1，类型2，。。。。。）
+    //不需要定义直接使用
+    
+    //第一种形式（类型推断） 元组常来给你 stu1 －>(sting,int,double)
+    let stu1 = ("xiaohong",23,98.1)
+    print(stu1)
+    //获取元组中的元素
+    let name = stu1.0
+    let age = stu1.1
+    let score = stu1.2
+    //索引从0开始
+    print("name:\(name) age:\(age) score:\(score)")
+ // 定义元素类型   按照  string  double  int  顺序进行赋值
+    let stu2:(String,Double,Int) = ("xiaohong",23.2,10)
+    print(stu2)
+    
+    //定义递单中 赋值的时候加标签
+    
+    let stu3 = (name:"xiaohuang",score:3.31,age:23)
+    print(stu3)
+    
+    
+    
+    
+    
+    
     
 }
 class ViewController: UIViewController {
@@ -85,6 +130,7 @@ class ViewController: UIViewController {
         test3()
         test4()
         test5()
+        test6()
         
     }
 
