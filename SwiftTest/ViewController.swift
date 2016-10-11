@@ -316,6 +316,35 @@ func testSwitch () {
         print("other")
     }
     
+    //让 case 下面的语句继续向下执行
+    let n = 1
+    switch n {
+    case 0:
+        print("fallThough 0")
+        fallthrough //表示继续向下执行  （遇到fallthrough 会继续执行下面的代码，而不悔退出 switch－case）
+    case 1:
+        print("111")
+        fallthrough
+    case 2:
+        print("23")
+        fallthrough
+    case 3:
+        print("343333")
+        fallthrough
+    default:
+        print("ssvvvvv")
+    }
+}
+//循环
+func testFor(){
+
+    //i++  i 和++中间不能有空格
+    //普通的for
+    var sum = 0
+    for var i = 1; i <= 10; i+=1{
+        sum += i
+    }
+    print("sum===\(sum)")
 }
 
 func operationsTest2(){
@@ -326,13 +355,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor=UIColor.red;
+        self.view.backgroundColor=UIColor.white;
     
 //        test()s
-        string()
+//        string()
         
-        operations()
-        
+//        operations()
+//        operationsTest2()
+        testSwitch()
     }
 
     override func didReceiveMemoryWarning() {
