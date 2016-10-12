@@ -341,10 +341,28 @@ func testFor(){
     //i++  i 和++中间不能有空格
     //普通的for
     var sum = 0
-    for var i = 1; i <= 10; i+=1{
+
+    for i in 0...10 {
         sum += i
+        print("sum----\(sum)")
     }
-    print("sum===\(sum)")
+    sum = 0
+    
+    var numberlist = 0...10
+    for i in numberlist
+    {
+        sum += i
+        print("numberlist----\(sum)")
+    }
+    
+    
+//    for var i = 1; i <= 10; i+=1{
+//        sum += i
+//    }
+//    print("sum===\(sum)")
+    
+//    for i in 0..<numberlist.count {     rs +=" "\(i)"" }<="" pre=""><p>这次我们换成了 0..<numberlist.count， 这种形式会排除闭区间最后那个数组，然后我们就可以在循环中用索引进行访问啦（注意符号="" ..<="" 两边不要有空格）。<="" p=""></numberlist.count，></p><p><strong>结尾</strong></p><p>好了，今天跟大家分享的内容就这么多。C 风格的循环语句其实更多是我们的一个长期养成的习惯问题。 世界的一切都在进步发展，包括开发语言也是一样。 看了 Swift 提供的循环语法， 你对 C 风格循环还有没有存在的必要时什么看法呢。 早些拥抱趋势和变化总是好的。</p>
+//    </numberlist.count {>
 }
 
 func operationsTest2(){
@@ -362,7 +380,9 @@ class ViewController: UIViewController {
         
 //        operations()
 //        operationsTest2()
-        testSwitch()
+//        testSwitch()
+        testFor()
+        
     }
 
     override func didReceiveMemoryWarning() {
