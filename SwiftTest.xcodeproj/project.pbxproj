@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		956B25261DC749F200F30B8B /* brandvip.png in Resources */ = {isa = PBXBuildFile; fileRef = 956B25251DC749F200F30B8B /* brandvip.png */; };
+		956B25281DC74A5100F30B8B /* peoplevip.png in Resources */ = {isa = PBXBuildFile; fileRef = 956B25271DC74A5100F30B8B /* peoplevip.png */; };
 		95715BA11D9A48F000CCFAD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95715BA01D9A48F000CCFAD6 /* AppDelegate.swift */; };
 		95715BA31D9A48F000CCFAD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95715BA21D9A48F000CCFAD6 /* ViewController.swift */; };
 		95715BA61D9A48F000CCFAD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95715BA41D9A48F000CCFAD6 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		956B25251DC749F200F30B8B /* brandvip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brandvip.png; sourceTree = "<group>"; };
+		956B25271DC74A5100F30B8B /* peoplevip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peoplevip.png; sourceTree = "<group>"; };
 		95715B9D1D9A48F000CCFAD6 /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95715BA01D9A48F000CCFAD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95715BA21D9A48F000CCFAD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		95715B9F1D9A48F000CCFAD6 /* SwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				956B25271DC74A5100F30B8B /* peoplevip.png */,
+				956B25251DC749F200F30B8B /* brandvip.png */,
 				95715BA01D9A48F000CCFAD6 /* AppDelegate.swift */,
 				95715BA21D9A48F000CCFAD6 /* ViewController.swift */,
 				95C065131D9B68AB002203D1 /* SwiftViewController.swift */,
@@ -126,6 +132,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				956B25261DC749F200F30B8B /* brandvip.png in Resources */,
+				956B25281DC74A5100F30B8B /* peoplevip.png in Resources */,
 				95715BAB1D9A48F000CCFAD6 /* LaunchScreen.storyboard in Resources */,
 				95715BA81D9A48F000CCFAD6 /* Assets.xcassets in Resources */,
 				95715BA61D9A48F000CCFAD6 /* Main.storyboard in Resources */,
