@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.rootViewController=SwiftViewController()
         //可选值 获取值要解包
         self.window?.makeKeyAndVisible()
+        ////////////
         
         return true
     }
