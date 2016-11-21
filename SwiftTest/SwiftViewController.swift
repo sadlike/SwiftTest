@@ -35,7 +35,7 @@ class SwiftViewController: UIViewController {
     func createbtn()  {
         self.view.backgroundColor=UIColor.white
         let btn:UIButton = UIButton(type:.custom)
-        btn.frame=CGRect(x:10,y:150,width:100,height:40)
+        btn.frame=CGRect(x:10,y:150,width:150,height:40)
         btn.setTitle("按钮", for: .normal)
         self.view .addSubview(btn)
         // let button = UIButton(frame:CGRect(x:10, y:150, width:100, height:30))
@@ -180,7 +180,7 @@ class SwiftViewController: UIViewController {
         dics = ["111":"aaa","222":"bbb"]
         let fileP = NSHomeDirectory() + "/Documents/dictionary.plist"
         
-        //testsss 
+        //testsss
         
         
         
