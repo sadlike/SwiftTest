@@ -179,8 +179,9 @@ class SwiftViewController: UIViewController {
        var dics = Dictionary<String,String>()
         dics = ["111":"aaa","222":"bbb"]
         let fileP = NSHomeDirectory() + "/Documents/dictionary.plist"
-        
-        //testsss
+    
+//        let dicc:[String:qany] = <#value#>
+
         
         
         
