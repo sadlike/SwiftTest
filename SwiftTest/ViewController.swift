@@ -7,6 +7,20 @@
 //
 
 import UIKit
+protocol Vehicle {
+    var numberOfWheels: Int {get}
+    var color: UIColor {get set }
+    mutating func changeColor()
+}
+struct MyCar:Vehicle {
+    let numberOfWheels: Int = 4
+    var color: UIColor = UIColor.blue
+    mutating func changeColor() {
+        color = .red
+    }
+    
+    
+}
 //无参无返回值
 func test1()  {
     
@@ -368,7 +382,19 @@ func testFor(){
 func operationsTest2(){
 
 }
-
+//单独的加几 固定
+func addOne(num:Int) ->Int{
+    return num+1
+    
+}
+//通用加函数  不固定
+func addTo(adder: Int)->(Int)->Int{
+    
+    return {
+        num in
+        return num + adder
+    }
+}
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -382,6 +408,19 @@ class ViewController: UIViewController {
 //        operationsTest2()
 //        testSwitch()
         testFor()
+        let addTwo = addOne(num: 2)
+        print(addTwo)
+        
+        //先走了加9 在 在加9到基础上啊执行
+        let  adds  = addTo(9)
+        let result = adds(12)
+        print(result)
+        //
+        let grenter11 = grenterThan(11)
+        
+        let one =   grenter11(12)
+        let two =    grenter11(1)
+        print(one,two)
         
     }
 
