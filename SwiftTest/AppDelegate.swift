@@ -16,10 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let rvc:SwiftViewController = SwiftViewController()
-        self.window!.rootViewController=rvc
+        self.window!.rootViewController=SwiftViewController()
         //可选值 获取值要解包
-        self.window!.backgroundColor=UIColor.gray
-        self.window!.makeKeyAndVisible()
+        self.window?.makeKeyAndVisible()
         ///,........
         return true
     }
