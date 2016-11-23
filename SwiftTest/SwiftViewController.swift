@@ -18,20 +18,6 @@ class SwiftViewController: UIViewController {
         self.judgeFileExist()
         self.createFile()
         
-        
-        func addOne(num:Int) ->Int{
-            return num+1
-            
-        }
-        
-        func addTo(_ adder: Int)->(Int)->Int{
-        
-            return {
-                num in
-                return num + adder
-            }
-        }
-        
         //在文档目录下新建folder目录
         let managers = FileManager.default
         let urlForDocument = managers.urls(for:FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask)
