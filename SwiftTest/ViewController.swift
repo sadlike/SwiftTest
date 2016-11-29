@@ -397,10 +397,13 @@ func addTo(adder: Int)->(Int)->Int{
 }
 class ViewController: UIViewController {
 
+        @IBOutlet var webView :UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor=UIColor.white;
-    
+        webView.loadRequest(NSURLRequest(url:NSURL(string:"http://baidu.com") as! URL) as URLRequest)
+
 //        test()s
 //        string()
         
@@ -408,19 +411,19 @@ class ViewController: UIViewController {
 //        operationsTest2()
 //        testSwitch()
         testFor()
-        let addTwo = addOne(num: 2)
-        print(addTwo)
+//        let addTwo = addOne(num: 2)
+//        print(addTwo)
         
         //先走了加9 在 在加9到基础上啊执行
-        let  adds  = addTo(9)
-        let result = adds(12)
-        print(result)
+//        let  adds  = addTo(9)
+//        let result = adds(12)
+//        print(result)
         //
-        let grenter11 = grenterThan(11)
-        
-        let one =   grenter11(12)
-        let two =    grenter11(1)
-        print(one,two)
+//        let grenter11 = grenterThan(11)
+//        
+//        let one =   grenter11(12)
+//        let two =    grenter11(1)
+//        print(one,two)
         
     }
 

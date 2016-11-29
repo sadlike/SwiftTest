@@ -10,13 +10,21 @@ import UIKit
 
 class SwiftViewController: UIViewController {
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self .createbtn()
-        self.createLabel()
-        self.checkFile()
-        self.judgeFileExist()
-        self.createFile()
+        let  webView = UIWebView()
+        let urls = NSURL(string:"https://www.baidu.com")
+        let urlRequest = NSURLRequest(url:urls! as URL)
+        webView.frame=CGRect(x:0,y:0,width:400,height:500)
+        webView.loadRequest(urlRequest as URLRequest)
+        self.view.addSubview(webView)
+        
+//        self .createbtn()
+//        self.createLabel()
+//        self.checkFile()
+//        self.judgeFileExist()
+//        self.createFile()
         
         //在文档目录下新建folder目录
         let managers = FileManager.default
